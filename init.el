@@ -11,8 +11,8 @@
 ; company mode
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
-
 (add-to-list 'company-backends 'company-c-headers)
+
 
 ; auto-complete config
 ;(load "~/.emacs.d/config/auto-complete-config.el")
