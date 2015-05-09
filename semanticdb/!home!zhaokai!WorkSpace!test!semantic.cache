@@ -1,0 +1,71 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "test.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [41 60])
+            ("iostream" include (:system-flag t) nil [62 81])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [83 103])
+            ("buffer" variable
+               (:dereference 1
+                :type "char")
+                nil [105 121])
+            ("print" function (:type "void") nil [123 263])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [274 283])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [284 296]))                  
+                :type "int")
+                nil [265 691]))          
+    :file "test.cc"
+    :pointmax 692
+    :fsize 691
+    :lastmodtime '(21837 21542 90980 111000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("A" type
+               (:members 
+                  ( ("next" variable
+                       (:pointer 1
+                        :type ("A" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [35 50])
+                    ("i" variable (:type "int") (reparse-symbol classsubparts) [52 58]))                  
+                :type "struct")
+                nil [23 61])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [72 81])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [82 94]))                  
+                :type "int")
+                nil [63 276]))          
+    :file "test.c"
+    :pointmax 277
+    :fsize 276
+    :lastmodtime '(21777 28505 289709 268000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!zhaokai!WorkSpace!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

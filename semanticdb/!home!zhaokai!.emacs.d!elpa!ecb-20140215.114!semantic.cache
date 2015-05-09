@@ -1,0 +1,18 @@
+;; Object ecb-20140215.114/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ecb-20140215.114/"
+  :tables (list 
+   (semanticdb-table "ecb-autoloads.el"
+    :major-mode 'emacs-lisp-mode
+    :tags nil
+    :file "ecb-autoloads.el"
+    :pointmax 251
+    :fsize 2817
+    :lastmodtime '(21837 21427 950983 56000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!zhaokai!.emacs.d!elpa!ecb-20140215.114!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
