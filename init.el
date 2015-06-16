@@ -65,3 +65,12 @@
  ;; If there is more than one, they won't work right.
  '(font-lock-function-name-face ((t (:foreground "blue")))))
 
+;;
+;; Custom settings
+;;
+
+
+;
+; Change perl-mode -> cc-mode
+;
+(defalias 'perl-mode 'cc-mode)
