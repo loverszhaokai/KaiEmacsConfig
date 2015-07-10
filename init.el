@@ -3,6 +3,8 @@
 ; show line number
 (global-linum-mode 1)
 
+; enable hs minor mode
+(add-hook 'c-mode-common-hook 'hs-minor-mode)
 
 ; package.el 
 (load "~/.emacs.d/config/package-config.el")
