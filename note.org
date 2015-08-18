@@ -1,0 +1,132 @@
+This is my note of Emacs
+
+
+
+* Getting Help
+
+
+* Cursor Movement
+
+** CTRL-b
+go backwards one character without deleting (usually you can also use the cursor key for this)
+
+** CTRL-f
+go forward one character without deleting (usually you can also use the cursor key for this)
+
+** ESC b
+go backwards one word
+
+** ESC f
+go forward one word
+
+** CTRL-p
+go up one line (usually you can also use the cursor key for this)
+
+** CTRL-n
+go down one line (usually you can also use the cursor key for this)
+
+** CTRL-a
+go to beginning of the line
+
+** CTRL-e
+go to end of the line
+
+** ESC a
+go to end of the sentence
+
+** ESC e
+go to end of the sentence
+
+** ESC <
+go to the beginning of the file
+
+** ESC >
+go to the end of the file
+
+** ESC x goto-line
+go to the line specified
+
+
+
+
+* Config
+
+** line number
+
+Emacs version: 24.3.1
+
+*** The Easy Way
+
+M-x linum-mode
+
+
+
+
+** How Emacs find your init file
+
+1. ~/.emacs
+2. ~/.emacs.d/init.el
+
+
+** Color coding
+
+
+** CEDET
+
+
+** Switch buffer
+ido-mode   
+
+
+
+
+
+* Helm
+
+Reference: http://tuhdo.github.io/helm-intro.html
+
+
+** helm mini buffer
+
+1. invoke: C-c C-b
+2. Scroll down: C-v
+   Scroll up: M-v
+
+** grep in all files
+
+1. invoke: M-x rgrep
+
+** helm-semantic-or-imenu
+
+1. invoke: C-x c or C-c h i
+
+show all the functions' declarations
+
+** helm-occur
+
+1. invoke: C-c s
+
+search in the current file
+
+
+* Helm-gtags
+
+Reference: http://tuhdo.github.io/c-ide.html#sec-1
+
+** Find definitions in project
+
+1. invoke: M-. or helm-gtags-dwim
+
+2. jump back to the original location by M-,
+
+3. show all the gtags
+   invoke: C-j or helm-gtags-select
+
+** Find references in project
+
+1. M-. or helm-gtags-dwim
+
+2. C-c g r or helm-gtags-find-rtags
+
+3. C-c g s or helm-gtags-find-symbol
+
