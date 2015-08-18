@@ -153,3 +153,11 @@
 ; Compile
 ;
 (global-set-key (kbd "C-c c") 'compile) ; compile
+
+
+;
+; Highlight current line
+;
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "#00ff00")
+(set-face-foreground 'highlight nil)
