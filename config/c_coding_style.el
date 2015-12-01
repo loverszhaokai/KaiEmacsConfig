@@ -7,7 +7,7 @@
 (setq-default indent-tabs-mode nil) ; emacs 23.1, 24.2, default to t
 
 ;; set default tab char's display width to 4 spaces
-(setq-default tab-width 8) ; emacs 23.1, 24.2, default to 8
+(setq-default tab-width 4) ; emacs 23.1, 24.2, default to 8
 
 (defun insert-tab-char ()
   "insert a tab char. (ASCII 9, \t)"

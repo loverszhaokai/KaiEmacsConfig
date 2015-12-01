@@ -1,9 +1,7 @@
 This is my note of Emacs
 
 
-
 * Getting Help
-
 
 * Cursor Movement
 
