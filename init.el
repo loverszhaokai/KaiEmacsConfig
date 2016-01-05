@@ -2,6 +2,7 @@
 
 ; show line number
 (global-linum-mode 1)
+(setq linum-format "%d ")
 
 ; enable hs minor mode
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
@@ -58,13 +59,15 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(c-tab-always-indent t)
- '(ecb-options-version "2.40"))
+ '(ecb-options-version "2.40")
+ '(global-linum-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(font-lock-function-name-face ((t (:foreground "blue")))))
+ '(font-lock-function-name-face ((t (:foreground "blue"))))
+ '(linum ((t (:inherit (shadow default) :foreground "brightmagenta")))))
 
 ;;
 ;; Custom settings
