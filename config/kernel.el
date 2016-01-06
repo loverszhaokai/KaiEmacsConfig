@@ -28,6 +28,5 @@
               (when (and filename
                          (string-match (expand-file-name "~/Workspace/kernels")
                                        filename))
-                (setq indent-tabs-mode t)
                 (setq show-trailing-whitespace t)
                 (c-set-style "linux-tabs-only")))))

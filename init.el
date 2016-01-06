@@ -58,9 +58,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(c-tab-always-indent t)
  '(ecb-options-version "2.40")
- '(global-linum-mode t))
+ '(global-linum-mode t)
+ '(indent-tabs-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -92,8 +92,8 @@
 (global-set-key (kbd "C-c h") 'helm-command-prefix)
 (global-unset-key (kbd "C-x c"))
 
-(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
-(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
+;(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
+;(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
 (define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
 (global-set-key (kbd "C-c s") 'helm-occur) ; use helm grep
 (global-set-key (kbd "C-x C-b") 'helm-mini)
@@ -162,5 +162,8 @@
 ; Highlight current line
 ;
 (global-hl-line-mode 1)
-(set-face-background 'hl-line "#00ff00")
+(set-face-background 'hl-line "#262626")
 (set-face-foreground 'highlight nil)
+
+
+(setq-default tab-width 2)

@@ -4,27 +4,14 @@
 ;; TAB config begin
 ;;
 ;; make indentation commands use space only (never tab character)
-(setq-default indent-tabs-mode nil) ; emacs 23.1, 24.2, default to t
+(setq-default indent-tabs-mode nil)
 
-;; set default tab char's display width to 4 spaces
-(setq-default tab-width 4) ; emacs 23.1, 24.2, default to 8
+(setq-default tab-width 2)
 
-(defun insert-tab-char ()
-  "insert a tab char. (ASCII 9, \t)"
-  (interactive)
-  (insert "\t")
-)
-
-(global-set-key (kbd "TAB") 'insert-tab-char) ; same as Ctrl+i
 ;;
 ;; TAB config end
 ;;
 
-
-; Use linux style
-(setq
-	c-default-style "linux" ;; set style to "linux"
-	)
 
 ;; Do not indent after insert ";)"
 (require 'cc-mode)
@@ -32,4 +19,9 @@
 		(lambda () (setq c-syntactic-indentation nil)))
 
 
+;; Use Google C++ style for emacs
+(load "~/.emacs.d/config/google-c-style.el")
+
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+(add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
