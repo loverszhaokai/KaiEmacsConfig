@@ -92,12 +92,18 @@
 (global-set-key (kbd "C-c h") 'helm-command-prefix)
 (global-unset-key (kbd "C-x c"))
 
-;(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
-;(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
+; rebind tab to run persistent action
+;(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
+; make TAB works in terminal
+;(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
 (define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
-(global-set-key (kbd "C-c s") 'helm-occur) ; use helm grep
+; use helm grep
+(global-set-key (kbd "C-c s") 'helm-occur)
+
+; Useful
 (global-set-key (kbd "C-x C-b") 'helm-mini)
-(global-set-key (kbd "C-x c") 'helm-semantic-or-imenu) ; C-x and release C and press c
+; C-x and release C and press c
+(global-set-key (kbd "C-x c") 'helm-semantic-or-imenu)
 
 (semantic-mode 1)
 
