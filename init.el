@@ -173,3 +173,20 @@
 
 
 (setq-default tab-width 2)
+
+
+;
+; GDB
+;
+(setq
+ ;; use gdb-many-windows by default
+ gdb-many-windows t
+
+ ;; Non-nil means display source file containing the main routine at startup
+ gdb-show-main t
+ )
+
+;
+; Selected text background-color
+;
+(set-face-attribute 'region nil :background "#2D2D2D")
