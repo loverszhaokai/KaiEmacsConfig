@@ -1,8 +1,10 @@
-
-
 ; show line number
 (global-linum-mode 1)
 (setq linum-format "%d ")
+
+; default coding system
+(modify-coding-system-alist 'file "\\.txt\\'" 'utf-8)
+(modify-coding-system-alist 'file "\\.log\\'" 'utf-8)
 
 ; enable hs minor mode
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
@@ -61,13 +63,6 @@
  '(ecb-options-version "2.40")
  '(global-linum-mode t)
  '(indent-tabs-mode nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(font-lock-function-name-face ((t (:foreground "blue"))))
- '(linum ((t (:inherit (shadow default) :foreground "brightmagenta")))))
 
 ;;
 ;; Custom settings
@@ -149,7 +144,6 @@
 (define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
 (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
 
-
 ;
 ; sr-speedbar
 ;
@@ -163,17 +157,10 @@
 ;
 (global-set-key (kbd "C-c c") 'compile) ; compile
 
-
 ;
-; Highlight current line
+; Tab width
 ;
-(global-hl-line-mode 1)
-(set-face-background 'hl-line "#262626")
-(set-face-foreground 'highlight nil)
-
-
 (setq-default tab-width 2)
-
 
 ;
 ; GDB
@@ -186,7 +173,5 @@
  gdb-show-main t
  )
 
-;
-; Selected text background-color
-;
-(set-face-attribute 'region nil :background "#2D2D2D")
+; package.el 
+(load "~/.emacs.d/config/color.el")
