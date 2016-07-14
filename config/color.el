@@ -2,7 +2,7 @@
 ; Highlight current line
 ;
 (global-hl-line-mode 1)
-(set-face-background 'hl-line "#262626")
+(set-face-background 'hl-line "#333333")
 (set-face-foreground 'highlight nil)
 
 ;
