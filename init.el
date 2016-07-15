@@ -12,11 +12,17 @@
 ; package.el 
 (load "~/.emacs.d/config/package-config.el")
 
-
 ; company mode
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 (add-to-list 'company-backends 'company-c-headers)
+
+; 80 column
+(require 'fill-column-indicator)
+(add-hook 'c-mode-hook 'fci-mode)
+(add-hook 'c++-mode-hook 'fci-mode)
+(setq fci-rule-color "red")
+(setq fci-rule-width 2)
 
 ; auto-complete config
 ;(load "~/.emacs.d/config/auto-complete-config.el")
