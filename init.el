@@ -1,6 +1,6 @@
 ; show line number
 (global-linum-mode 1)
-(setq linum-format "%d ")
+(setq linum-format "%4d ")
 
 ; default coding system
 (modify-coding-system-alist 'file "\\.txt\\'" 'utf-8)
@@ -181,3 +181,11 @@
 
 ; package.el 
 (load "~/.emacs.d/config/color.el")
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(font-lock-function-name-face ((t (:foreground "blue"))))
+ '(helm-selection ((t (:background "yellow" :distant-foreground "black"))))
+ '(linum ((t (:inherit (shadow default) :background "color-17" :foreground "color-166")))))
