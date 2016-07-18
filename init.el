@@ -189,4 +189,4 @@
  ;; If there is more than one, they won't work right.
  '(font-lock-function-name-face ((t (:foreground "blue"))))
  '(helm-selection ((t (:background "yellow" :distant-foreground "black"))))
- '(linum ((t (:inherit (shadow default) :background "color-17" :foreground "color-166")))))
+ '(linum ((t (:inherit (shadow default) :background "#6A5ACD" :foreground "color-166")))))
