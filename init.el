@@ -1,10 +1,9 @@
 
 (add-to-list 'load-path (expand-file-name "config" user-emacs-directory))
+
 (require 'config-editing-utils)
 
-
-; enable hs minor mode
-(add-hook 'c-mode-common-hook 'hs-minor-mode)
+(require 'config-cpp)
 
 ; package.el 
 (load "~/.emacs.d/config/package-config.el")
@@ -58,9 +57,6 @@
 (setq make-backup-files nil)
 
 
-
-; C/C++ coding style
-(load "~/.emacs.d/config/c_coding_style.el")
 
 
 (custom-set-variables
