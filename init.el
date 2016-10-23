@@ -7,17 +7,14 @@
 
 (require 'config-cpp)
 
+(require 'config-fci)
+
+
+
 ; go mode
 (add-to-list 'load-path "~/.emacs.d/config/go-mode.el-master")
 (require 'go-mode-autoloads)
 
-; 80 column
-(require 'fill-column-indicator)
-(add-hook 'c-mode-hook 'fci-mode)
-(add-hook 'c++-mode-hook 'fci-mode)
-(setq fci-rule-column 80)
-(setq fci-rule-color "red")
-(setq fci-rule-width 2)
 
 ; company config
 (load "~/.emacs.d/config/company.el")
@@ -51,9 +48,6 @@
 ; linux kernel code style
 ;(load "~/.emacs.d/config/kernel.el")
 
-
-; prevent the creation of backup files
-(setq make-backup-files nil)
 
 
 
@@ -94,11 +88,6 @@
 ; Compile
 ;
 (global-set-key (kbd "C-c c") 'compile) ; compile
-
-;
-; Tab width
-;
-(setq-default tab-width 2)
 
 ;
 ; GDB

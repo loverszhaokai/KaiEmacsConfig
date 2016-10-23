@@ -1,3 +1,6 @@
+; prevent the creation of backup files
+(setq make-backup-files nil)
+
 ; show line number
 (global-linum-mode 1)
 (setq linum-format "%4d ")
