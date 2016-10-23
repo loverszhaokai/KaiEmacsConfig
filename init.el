@@ -1,10 +1,7 @@
-; show line number
-(global-linum-mode 1)
-(setq linum-format "%4d ")
 
-; default coding system
-(modify-coding-system-alist 'file "\\.txt\\'" 'utf-8)
-(modify-coding-system-alist 'file "\\.log\\'" 'utf-8)
+(add-to-list 'load-path (expand-file-name "config" user-emacs-directory))
+(require 'config-editing-utils)
+
 
 ; enable hs minor mode
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
