@@ -1,12 +1,11 @@
 
 (add-to-list 'load-path (expand-file-name "config" user-emacs-directory))
 
+(require 'config-package)
+
 (require 'config-editing-utils)
 
 (require 'config-cpp)
-
-; package.el 
-(load "~/.emacs.d/config/package-config.el")
 
 ; go mode
 (add-to-list 'load-path "~/.emacs.d/config/go-mode.el-master")
